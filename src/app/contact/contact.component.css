@@ -1,0 +1,58 @@
+.container {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1500px;
+    gap: 2rem;
+    background-color: #C8C6CB;
+    text-align: center;
+}
+.display-2 {
+    font-size: 30px;
+    text-align: center;
+    color: #282E82;
+}
+.centered img {
+    width: 250px;
+}
+.display-3 {
+    font-size: 20px;
+}
+.right {
+    margin: 0 auto;
+    position: relative;
+}
+.left {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0 auto;
+    position: relative;
+}
+.btn {
+    background-color: #282E82;
+    color: white;
+}
+.email {
+    color: #282E82;
+}
+:host.pc .container {
+    grid-template-columns: 1fr 1fr;
+}
+:host.pc .display-2 {
+    margin-top: 3rem;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 50px;
+}
+:host.pc .display-3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 35px;
+}
+:host.pc .right{
+    margin-top: 5rem;
+    grid-row: 2/4;
+    grid-column: 2/3;
+}
+:host.pc .right img {
+    width: 550px;
+}
